@@ -168,7 +168,7 @@ img {
   width: 100%;
   margin: 0 auto;
 }
-header {
+.nav {
   position: fixed;
   top: 0;
   display: flex;
@@ -179,10 +179,10 @@ header {
   background-color: #FFFFFF;
   border-bottom: 2px dashed #C0C0C0;
 }
-header nav {
+.nav nav {
   width: auto;
 }
-header nav a {
+.nav nav a {
   font-size: 2rem;
   text-decoration: none;
   color: black;
