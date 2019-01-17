@@ -2,3 +2,15 @@
 .border-bottom(){
     border-bottom: 2px dashed @navigation-border;
 }
+
+.custom-button(@height, @width, @bgcolor, @color, @border-radius){
+    height: @height;
+    width: @width;
+    background-color: @bgcolor;
+    border-radius: @border-radius;
+    color: @color;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
