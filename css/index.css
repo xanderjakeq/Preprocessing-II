@@ -278,6 +278,9 @@ img {
   .home .content-section .img-content {
     width: 100%;
   }
+  .home .content-section img {
+    width: 100%;
+  }
 }
 .home .featured {
   flex-direction: column;

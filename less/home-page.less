@@ -1,3 +1,12 @@
+
+// Pattern
+// element{
+//   normalstyles{
+//   }
+//   @media querie{
+//   }
+// }
+
 .home {
   margin-top: @nav-height;
   .content-section {
@@ -23,7 +32,15 @@
     @media @mobile{
       flex-direction: column;
       .text-content,.img-content{
-        width: 100%;
+        width: @full-width;
+        // Below Doesn't work dunno why
+        // img{
+        //   width: @full-width;
+        // }
+      }
+      // Applu it here instead
+      img{
+        width: @full-width;
       }
     }
 
