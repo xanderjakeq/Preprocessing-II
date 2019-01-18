@@ -1,1 +1,43 @@
 // Mixins in here
+.border-bottom(){
+    border-bottom: 2px dashed @navigation-border;
+}
+
+.custom-button(@height, @width, @bgcolor, @color, @border-radius){
+    height: @height;
+    width: @width;
+    background-color: @bgcolor;
+    border-radius: @border-radius;
+    color: @color;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.keyframes(@name, @arguments){
+    @keyframes @name {
+        @arguments(); //whats up with this syntax. ahh Detached ruleset. Copies the content of curly brackets{}
+    }
+}
+
+.animation(@arguments){
+    animation: @arguments;
+}
+
+.nav-animation {
+    position: fixed;
+    .keyframes(jump, {
+        0%, 100%, 20%, 50%, 80% {
+            transform: translateY(0);  
+        }
+        40%{
+            transform: translateY(-20px);
+        }
+        60%{
+            transform: translateY(-15px);
+        }
+    });
+
+    .animation(jump 300ms linear);
+}

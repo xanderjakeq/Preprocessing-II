@@ -1,13 +1,11 @@
 .home {
-
+  margin-top: @nav-height;
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
-   
-    
+ 
     .text-content {
       width: 48%;
       padding-right: 1%;
@@ -21,11 +19,32 @@
         border-radius: 10px;
       }
     }
+
+    @media @mobile{
+      flex-direction: column;
+      .text-content,.img-content{
+        width: 100%;
+      }
+    }
+
+  }
+
+  .featured{
+    flex-direction: column;
+    .border-bottom;
+    margin-top: 0;
+    .img-content, .text-content{
+      img{
+        border-radius: 0;
+      }
+      margin: 0 0 20px;;
+      width: 100%;
+    }
   }
 
   .inverse-content {
     padding-bottom: 30px;
-    border-bottom: 2px dashed @navigation-border;
+    .border-bottom;
 
     .text-content {
       padding-left: 1%;
@@ -36,6 +55,10 @@
       padding-right: 1%;
       padding-left: 0;
     }
+
+    @media @mobile{
+      flex-direction: column-reverse;
+    }
   }
 
   .content-destination {
@@ -44,6 +67,10 @@
 
     img {
       border-radius: 10px;
+    }
+
+    @media @mobile{
+      width: 100%;
     }
   }
 
@@ -56,6 +83,59 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      .btn{
+        .custom-button(30px, 100%, @button-bg, @white, 10px);
+      }
     }
+
+    @media @mobile{
+      flex-direction: column;
+      align-items: center;
+      .destination{
+        width: 80%;
+      }
+    }
+  }
+
+  .form {
+    form{
+      display: flex;
+      flex-direction: column;
+      margin: 20px 0;
+      label{
+        font-size: 2rem;
+        
+      }
+      input,textarea{
+        margin: 10px 0;
+        width: 100%;
+      }
+
+      input{
+        height: 30px;
+        border-radius: 10px;
+        // b;
+      }
+      textarea{
+        resize: none;
+        height: 200px;
+      }
+      li{
+        input{
+          .custom-button(max-content,30%,teal,white,20px);
+          border: none;
+          @media @mobile{
+            font-size: 2rem;
+            width: 100%;
+          }
+        }
+      }
+      
+    }
+  }  
+
+  @media @mobile{
+    margin-top: @nav-mobile-height;
+    padding: 0 10%;
   }
 }// home

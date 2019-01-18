@@ -30,9 +30,9 @@ Fun Bus is a travel agency looking for some help on their website.  They want a 
 
 ## Task 4: Desktop Updates Needed
 * [ ] Review the [desktop design file](design-files/fun-bus-desktop.png).  Notice the navigation, header, and buttons at the bottom of the page are missing.
-* [ ] Navigation: Use the `navigation.less` file for all your navigation styling
-* [ ] Main Header: Use the `home-page.less` file for the header styling.
-* [ ] Buttons: Create a parametric mixin that can create the missing buttons in the design file. Use the `mixins.less` file to create your mixin.
+* [./] Navigation: Use the `navigation.less` file for all your navigation styling
+* [./] Main Header: Use the `home-page.less` file for the header styling.
+* [./] Buttons: Create a parametric mixin that can create the missing buttons in the design file. Use the `mixins.less` file to create your mixin.
 
 
 ## Task 5: Mobile Updates Needed
@@ -43,7 +43,7 @@ Fun Bus is a travel agency looking for some help on their website.  They want a 
 ## Stretch Goals: 
 * [ ] Create an animation mixin using parametric mixins
 * [ ] Introduce a form with inputs allowing users to select a vacation package and a submit button at the bottom of the page. Introduce inputs for name, email, phone number, and an area for them to leave special instructions. 
-* [ ] Style the site to look good at all sizes, not just desktop and phone
+* [./] Style the site to look good at all sizes, not just desktop and phone
 
 
 
